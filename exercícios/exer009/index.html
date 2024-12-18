@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <p>
+        Você está fazendo uma lista onde tem uma ordem a ser seguida, quando chega no final, percebe que precisa acrescentar uma coisa no inicio da lista. Para nao ter que mudar os numeros manualmente, poderá escrever a tag &lt;ol&gt; para fazer uma <strong>lista ordenada</strong> e para cada item da lista, coloca a tag &lt;li&gt; para cada <strong>item da lista</strong>.
+    </p>
+    <ol>
+        <li>Acordar</li>
+        <li>Conferir se hoje tem muita demanda</li>
+        <li>Levantar</li>
+        <li>Escovar os dentes</li>
+        <li>Tomar café</li>
+    </ol>
+    <p>
+        Também podemos escolher se a contagem da lista inicia com letras ou números, incluindo o parâmetro <strong>"TYPE"</strong> dentro da tag, e ainda poedmos escolher por qual número começar com o parâmetro <strong>"START"</strong>, também dentro da tag.
+    </p>
+    <ol type="a">
+        <li>Acordar</li>
+        <li>Conferir se hoje tem muita demanda</li>
+        <li>Levantar</li>
+        <li>Escovar os dentes</li>
+        <li>Tomar café</li>
+    </ol>
+    <ol type="1" start="10">
+        <li>Acordar</li>
+        <li>Conferir se hoje tem muita demanda</li>
+        <li>Levantar</li>
+        <li>Escovar os dentes</li>
+        <li>Tomar café</li>
+    </ol>
+    <h2>Listas não Ordenadas</h2>
+    <p>
+        As listas não ordenadas, são as listas onde a ordem não intefere, onde não necessita numerar a sequência. Temos como exemplo uma lista de compras de supermercado. Para esse tipo de lista, utilizamos a tag <strong>&lt;ul&gt;</strong> e a tag <strong>&lt;li&gt;</strong> dentro dela.
+    </p>
+    <ul>
+        <li>Leite</li>
+        <li>Bolo</li>
+        <li>Bacon</li>
+        <li>Pão</li>
+    </ul>
+    <p>
+        Tambem podemos alterar os marcadores com o parâmetro <strong>TYPE</strong> depois da tag <strong>&lt;ul&gt;</strong>.
+    </p>
+    <ul type="square">
+        <li>Leite</li>
+        <li>Bolo</li>
+        <li>Bacon</li>
+        <li>Pão</li>
+    </ul>
+    <ul type="circle">
+        <li>Leite</li>
+        <li>Bolo</li>
+        <li>Bacon</li>
+        <li>Pão</li>
+    </ul>
+    <h2>Misturando listas</h2>
+    <p>
+        Podemos misturar as listas como desejamos. Ordenada dentro de não ordenada, vice e versa ou um mesmo tipo de lista dentro da outra. Segue os exemplos.
+    </p>
+    <h3>Ordenada com Ordenada</h3>
+    <h4>Minhas comidas preferidas</h4>
+    <ol>
+        <li>Massas</li>
+            <ol type="a">
+                <li>Pizza</li>
+                <li>Filé a parmegiana</li>
+                <li>Penne ao molho branco</li>
+            </ol>
+        <li>Doces</li>
+            <ol type="I">
+                <li>Brigadeiro</li>
+                <li>Paçoca</li>
+                <li>Açai</li>
+            </ol>
+    </ol>
+    <h3>Não ordenada com Não Ordenada</h3>
+    <h4>Esportes preferidos</h4>
+        <ul>
+            <li>Olimpicos</li>
+                <ul type="square">
+                    <li>Futebol</li>
+                    <li>Volei</li>
+                </ul>
+            <li>Não Olimpicos</li>
+                <ul type="square">
+                    <li>Futsal</li>
+                </ul>
+        </ul>
+    <h3>Ordenada com Não Ordenada</h3>
+    <h4>Series preferidas</h4>
+    <ul>
+        <li>Netflix</li>
+            <ol>
+                <li>Suits</li>
+                <li>Flash</li>
+            </ol>
+        <li>Amazon</li>
+            <ol>
+                <li>How it met your mother</li>
+                <li>Supernatural</li>
+        </ol>
+    </ul>
+</body>
+<h2>Listas de definição</h2>
+<p>
+    Para encerrarmos as listas, temos a lista de definição, que serve para definir um termo que desejamos. Usando a tag <strong>&lt;dl&gt;</strong>, e dentro dela usamos as tags <strong>&lt;dt&gt;</strong> para o termo e <strong>&lt;dd&gt;</strong> para a definição.
+</p>
+<dl>
+    <dt>HTML</dt>
+    <dd>Linguagem de marcação para conteúdos de um site.</dd>
+    <dt>CSS</dt>
+    <dd>Linguagem de marcação para design de um site.</dd>
+    <dt>JavaScript</dt>
+    <dd>Linguagem de programção para a interação de um site.</dd>
+</dl>
+</html>

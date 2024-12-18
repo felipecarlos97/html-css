@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+body {
+    background-color: #00AAE7;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    color: #00465F;
+}
+
+#titulo {
+    background-color: #0078A3;
+    text-align: center;
+    color: white;
+}
+
+.subtexto {
+    text-indent: 35px;
+}
+
+h2 {
+    color: #00465F;
+}
+
+h2.basico {
+    color: green;
+}
+
+h2.intermediario {
+    color: yellow;
+}
+
+h2.avancado {
+    color: red;
+}
+
+.destaque {
+    background-color: black;
+}

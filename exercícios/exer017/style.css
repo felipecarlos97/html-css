@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+
+body {
+    font-weight: normal;
+    font-style: italic;
+    background-image: linear-gradient(to bottom, #5cb5f6, #27506d);
+    background-attachment: fixed;
+}
+
+h1 {
+    font: italic bolder 3em Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-decoration: underline;
+}
+
+h2 {
+    font: bold 1.5em 'Courier New', Courier, monospace;
+    text-decoration: underline;
+}
+
+p {
+    font: normal 1em Arial, Helvetica, sans-serif;
+    text-align: justify;
+    text-indent: 35px;
+}

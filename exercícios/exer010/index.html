@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links</h1>
+    <h2>Links externos</h2>
+    <p>
+        Para anexar um link na mensagem, usamos a tag <strong>&lt;a&gt;</strong>, que da referência a <strong>ÂNCORA</strong>
+    </p>
+    <p>
+        Você pode acessar o  meu reposotório público no <a href="https://gustavoguanabara.github.io"> GitHub</a>
+    </p>
+    <p>
+        Você também pode acessar o canal grátis no <a href="https://youtube.com/cursoemvideo">Youtube</a>.
+    </p>  
+    <p>
+        É indicado que ao colocar links externos em seu site, coloque-se os seguintes parâmetros apos o link, <strong>target="_blank" e rel="external"</strong>, para que ao clicar no link, abra outra aba no navegador ao invés de sobrepor seu site. O <strong>target</strong> serve para abrir em uma aba nova e o <strong>rel</strong> para referenciar que o link é externo. E ainda podemos falar para o navegador em qual linguagem está o site que vamos direcionar com o parâmetro hreflang="".
+    </p> 
+    <p>
+        Para acompanhar as noticias do Flamengo, eu acesso o site do <a href="https://ge.globo.com/futebol/times/flamengo/" hreflang="pt-br" target="_blank" rel="external">GloboEsporte.com</a>
+    </p> 
+    <h2>Links internos</h2>
+    <p>
+        Esta é a primeira página do meu site. Veja também os conteúdos programados na nossa <a href="pag002.html" rel="next">segunda página</a>. <!-- Não precisa colocar o link todo para os links internos -->
+    </p>
+    <p>
+        Utilizamos o parâmetro <strong>rel="next"</strong> para indicarmos que vamos para a proxima página.
+    </p>
+    <p>
+        Acompanhe também nossa página dedicada as <a href="noticias flamengo/pag003.html" rel="next">notícias do Flamengo</a>.
+    </p>
+    <h2>Links para Download</h2>
+    <ul>
+        <li><a href="livro/PLANO DE ENSINO.pdf" download="PLANO DE ENSINO.pdf" type="application/pdf">Link do livro em PDF</a></li>
+        <li><a href="livro/PLANO DE ENSINO.zip" download="PLANO DE ENSINO.zip" type="application/zip">Link do livro compactado</a></li>
+    </ul>
+    <p>
+        Para realizar os links de download, usamos dois parâmetros, o download="" onde colocamos o nome do arquivo, e o type="" onde é colocado o tipo de midia. Tem um site onde podemos achar todos os tipos, que é o site da <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" hreflang="en" target="_blank" rel="external">iana.org</a>
+    </p>
+</body>
+</html>

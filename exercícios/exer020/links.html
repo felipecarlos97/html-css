@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: green;
+            text-decoration: none;
+            font-weight: bolder;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a:visited {
+            color: red;
+        }
+
+        a:active {
+            color: blue;
+            background-color: black;
+        }
+
+        a::after {
+            content: ' [link]'; /*Content = conteúdo que vai aparecer*/
+            text-decoration: none;
+            font-weight: normal;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1> 
+    <ul>
+        <li><a href="https://youtube.com" target="_blank" rel="external" hreflang="pt-br">Site do YouTube</a></li>
+        <li><a href="https://ge.globo.com/" target="_blank" rel="external" hreflang="pt-br">Site do GloboEsporte</a></li>
+        <li><a href="https://facebook.com" target="_blank" rel="external" hreflang="pt-br">Site do Facebook</a></li>
+    </ul>   
+</body>
+</html>

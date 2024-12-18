@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>
+        Tente abrir em vários dispositivos diferente ou simplesmente aumente e diminua o tamanho do seu navegador.
+    </p>
+    <p>
+        A tag &lt;picture&gt; fala que vamos colocar uma imagem ali. Depois, dentro dela, utilizamos a tag &lt;source&gt;, para falarmos que se a tela for menor que a imagem, a imagem será mudada por outra.
+    </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagens flexíveis">
+    </picture>
+    <h1>Reproduzindo áudios</h1>
+    <p>
+        Vamos aprender a reproduzir áudios em HTML5. Para isso, podemos usar a tag &lt;audio&gt; e juntar com os parâmetros controls e autoplay. Primeiro coloca-se o autoplay, caso não inicie sozinho, coloca-se o controls.
+    </p>
+    <audio src="midias/luna-misteriosa.mp3" controls></audio>
+    <p>
+        Outra maneira de colocar áudio é com apagando o parâmetro src da tag e colocar por contra propria o <strong>source src</strong>. Observe na tag que usamos alguns parâmetros, como o preload, autoplay, controls e loop. O preload serve para falar como será o pré-carregamento do áudio e o loop fará o áudio se repetir sempre que terminar.
+    </p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midias/luna-misteriosa.mp3" type="audio/mpeg">
+    </audio>
+    <p>
+        Seu navagador não é compatível para reproduzir áudio. <a href="midias/luna-misteriosa.mp3">Clique aqui</a> para baixar seu mp3.
+    </p>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos</title>
+</head>
+<body>
+<h1>Inserindo vídeos</h1>
+<h2>Vídeos hospedados localmente</h2>
+<p>
+    Este vídeo está hospedado no meu próprio servidor.
+</p> 
+<p>
+    Para inserir o vídeo usamos a tag <strong>&lt;video&gt;</strong> com os parâmetros <strong>width</strong> para conseguir diminuir o tamanho do vídeo na tela, e <strong>controls</strong> para aparecer os comandos de play e pause.
+</p> 
+<video src="midia/meu-video720.mp4" controls width="400" loop></video>
+<p>
+    Outra maneira de inserir vídeo é escrevendo seus próprios sources por lista, de forma que quem está em cima terá preferência pelo de baixo.
+</p>
+<video controls width="400">
+    <source src="midia/meu-video1080.mp4" type="video/mp4">
+    <source src="midia/meu-video.webm" type="video/webm">
+</video>
+<p>
+    Ainda podemos colocar uma capa nos vídeos com o parâmetro <strong>poster</strong>.
+</p>  
+<video width="400" poster="imagens/hp3-650.jpg" controls>
+    <source src="midia/meu-video.webm" type="video/webm">
+</video>
+<h2>Video externos</h2>
+<h3>YouTube</h3>
+<p>
+    É muito simples, basta <strong>escolher</strong> o vídeo, aperta pra <strong>compartilhar</strong> e depois em <strong>incorporar</strong>, vai ser criado um HTML que é so <strong>colar aqui</strong>.
+</p>
+<iframe width="450" height="315" src="https://www.youtube.com/embed/QPF1bCC2BFw?si=P2snKnW6qldnJMZK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<h3>Vídeos do Vimeo</h3>
+<p>
+    Segue o mesmo protocolo do YouTube.
+</p>
+<iframe src="https://player.vimeo.com/video/7962571?h=8804d94bff&byline=0&portrait=0" width="450" height="338" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
